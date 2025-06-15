@@ -1,7 +1,7 @@
 # dotfiles
 
+create links
+```
 cd dotfiles
-
-create symlinks
-
 stow .
+```
