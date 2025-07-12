@@ -2,15 +2,16 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$fill\
+$character"""
+
+right_format = """
 $python\
 $rust\
 $jobs\
 $cmd_duration\
 $username\
 $localip\
-$line_break\
-$character"""
+$line_break"""
 
 add_newline = false
 palette = 'roadrunner'
@@ -18,9 +19,6 @@ palette = 'roadrunner'
 [character]
 success_symbol = '[>](bold green)'
 error_symbol = '[X](bold red)'
-
-[fill]
-symbol = ' '
 
 [directory]
 style = 'bold fg:blue'
@@ -35,7 +33,7 @@ format = '[on](white) [$branch ]($style)'
 staged = '+$count'
 modified = '!$count'
 untracked = '?$count'
-format = '([$ahead_behind$staged$modified](bold brown)[$untracked](bold blue))'
+format = '([$ahead_behind$staged$modified](bold brown)[$untracked](bold blue)) '
 
 [cmd_duration]
 min_time = 500
