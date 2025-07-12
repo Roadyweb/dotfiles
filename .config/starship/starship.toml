@@ -25,9 +25,7 @@ symbol = ' '
 [directory]
 style = 'bold fg:blue'
 format = '[$path ]($style)'
-truncation_length = 3
-truncation_symbol = '…/'
-truncate_to_repo = false
+fish_style_pwd_dir_length = 3
 
 [git_branch]
 style = 'fg:green'
