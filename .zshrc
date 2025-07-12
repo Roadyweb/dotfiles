@@ -25,6 +25,8 @@ zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::web-search
+zinit snippet OMZL::functions.zsh
 
 # Load zsh-history-substring-search last
 zinit load zsh-users/zsh-history-substring-search
