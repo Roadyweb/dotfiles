@@ -78,6 +78,9 @@ alias ll='ls -l'
 alias lla='ls -la'
 alias vim='nvim'
 alias c='clear'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
 
 # Shell integrations
 eval "$(fzf --zsh)"
