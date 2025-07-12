@@ -9,5 +9,20 @@ $cmd_duration\
 $line_break\
 $character"""
 
+palette = 'roadrunner'
+
 [fill]
 symbol = ' '
+
+[palettes.roadrunner]
+brown = '#C2A009'
+blue = '#00AFFF'
+green = '#5FD700'
+teal = '#88C0D0'
+red = '#BF616A'
+orange = '#D08770'
+yellow = '#EBCB8B'
+purple = '#B48EAD'
+gray = '#434C5E'
+black = '#2E3440'
+white='#D8DEE9'
