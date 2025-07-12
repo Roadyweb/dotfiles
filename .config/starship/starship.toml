@@ -8,6 +8,7 @@ $rust\
 $jobs\
 $cmd_duration\
 $username\
+$localip\
 $line_break\
 $character"""
 
@@ -41,7 +42,13 @@ format = '([$ahead_behind$staged$modified](bold brown)[$untracked](bold blue))'
 [cmd_duration]
 min_time = 500
 style = 'fg:gray'
-format = '[took $duration]($style)'
+format = '[took $duration]($style) '
+
+[localip]
+disabled = false
+
+[username]
+format = '[$user@]($style)'
 
 [palettes.roadrunner]
 brown = '#C2A009'
