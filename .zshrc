@@ -35,6 +35,9 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
+# Load local modifications (for example needed for starfish where no current fzf is available
+[ -f ~/.local.zsh ] && source ~/.local.zsh
+
 # Keybindings
 # bindkey -e
 bindkey '^p' history-search-backward
