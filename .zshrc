@@ -32,6 +32,10 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
+# Load zsh-history-substring-search last
+zinit load zsh-users/zsh-history-substring-search
+zinit ice wait atload'_history_substring_search_config'
+
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -45,6 +49,8 @@ zinit cdreplay -q
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # History
 HISTSIZE=5000
