@@ -45,6 +45,7 @@ bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey '\e\e' sudo-command-line
 
 # History
 HISTSIZE=5000
