@@ -1,5 +1,11 @@
 ## Installation
 
+Starship
+
+```
+curl -sS https://starship.rs/install.sh | sh
+```
+
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
