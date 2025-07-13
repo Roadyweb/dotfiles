@@ -34,7 +34,7 @@ format = '[on](white) [$branch ]($style)'
 staged = '+$count'
 modified = '!$count'
 untracked = '?$count'
-format = '([$ahead_behind$staged$modified](bold brown)[$untracked](bold blue)) '
+format = '([$ahead_behind$staged$modified[$untracked](bold brown) ](bold blue))'
 
 [cmd_duration]
 min_time = 500
