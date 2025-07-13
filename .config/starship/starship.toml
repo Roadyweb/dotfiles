@@ -7,6 +7,7 @@ $character"""
 right_format = """
 $python\
 $rust\
+$zig\
 $jobs\
 $cmd_duration\
 $username\
@@ -45,6 +46,12 @@ disabled = false
 
 [username]
 format = '[$user@]($style)'
+
+[python]
+format = 'via [python ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[zig]
+format = 'via [zig $version ]($style)'
 
 [palettes.roadrunner]
 brown = '#C2A009'
