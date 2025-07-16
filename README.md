@@ -1,12 +1,18 @@
 ## Installation
 
-Starship
+### Starship
 
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-First, check out the dotfiles repo in your $HOME directory using git
+### Pyenv
+```
+curl -fsSL https://pyenv.run | bash
+```
+See https://github.com/pyenv/pyenv?tab=readme-ov-file#installation
+
+### First, check out the dotfiles repo in your $HOME directory using git
 
 ```
 git clone git@github.com:Roadyweb/dotfiles.git
