@@ -31,10 +31,22 @@ o.hlsearch = false            -- do not highlight matches
 o.ignorecase = true           -- ignore case in searches by default
 o.smartcase = true            -- but make it case sensitive if an uppercase is entered
 
+-- Scrolling
+o.scrolloff = 10            -- Disable scroll to end of file
+
 global.mapleader = " "
 global.maplocalleader = " "
 
-keymap("n", "<leader>t", ":NvimTreeOpen<CR>", default_opts)
+keymap("n", "<leader>t", ":NvimTreeToggle<CR>", default_opts)
 
+keymap("n", "<leader>h", "<C-w>h", default_opts)
+keymap("n", "<leader>l", "<C-w>l", default_opts)
+keymap("n", "<leader>j", "<C-w>j", default_opts)
+keymap("n", "<leader>k", "<C-w>k", default_opts)
 
-
+-- Using <leader> + number (1, 2, ... 9) to switch tab
+for i=1,9,1
+do
+  keymap('n', '<leader>'..i, i.."gt", {})
+end
+keymap('n', '<leader>0', ":tablast<cr>", {})
