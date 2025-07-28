@@ -27,7 +27,11 @@ stow .
 
 zsh config from https://github.com/dreamsofautonomy/zensh
 
-## TMUX
+### NVIM
+
+Keybindings see https://catalins.tech/neovim-keybindings/
+
+### TMUX
 
 Reload TMUX environment so TPM is sourced:
 
@@ -38,7 +42,7 @@ tmux source ~/.tmux.conf
 
 That's it!
 
-### Installing plugins
+#### Installing plugins
 
 1. Add new plugin to `~/.tmux.conf` with `set -g @plugin '...'`
 2. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
@@ -46,7 +50,7 @@ That's it!
 You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 
 
-### Key bindings
+#### Key bindings
 
 `prefix` + <kbd>I</kbd>
 - Installs new plugins from GitHub or any other git repository
